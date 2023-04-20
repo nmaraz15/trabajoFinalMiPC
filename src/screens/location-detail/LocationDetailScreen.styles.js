@@ -1,5 +1,6 @@
 import { StyleSheet, StatusBar, Dimensions } from 'react-native'
 import { COLORS, FONT_SIZE } from '../../utils/theme'
+import { BottomTabBar } from '@react-navigation/bottom-tabs'
 
 export const styles = StyleSheet.create({
   container: {
@@ -28,9 +29,25 @@ export const styles = StyleSheet.create({
     marginBottom: 5
   },
   date: {
-    fontSize: 20,
-    color: '#444',
-    marginBottom: 5
+    marginTop: 250, 
+    marginLeft:0,
+     height: 50,
+     width: '55%',
+      borderColor: COLORS.inactive,
+      borderWidth: 1,
+      borderRadius: 8,
+      
+      fontSize: FONT_SIZE.lg,
+     
+      color: COLORS.white,
+      backgroundColor: COLORS.secondaty,
+      paddingLeft:2,
+      paddingTop: 8,
+      textAlign: 'center'
+      
+      
+
+
   },
   ratingContainer: {
     flexDirection: 'row',
@@ -50,5 +67,43 @@ export const styles = StyleSheet.create({
     height: 250,
     marginVertical: 20,
     borderRadius: 10
+  }, 
+  
+
+  assistantsContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingLeft: 5
+
+  },
+  imageAssistants1: {
+    width: 40, 
+    height: 40, 
+    borderRadius: 40/ 2,
+    },
+  imageAssistants2: {
+    width: 40, 
+    height: 40, 
+    borderRadius: 40/ 2,
+    left: -15
+  },
+  imageAssistants3: {
+    width: 40, 
+    height: 40, 
+    borderRadius: 40/ 2,
+    left: -30
+  },
+  imageAssistants4: {
+    width: 40, 
+    height: 40, 
+    borderRadius: 40/ 2,
+    left: -45
+  },
+  imageAssistants5: {
+    width: 40, 
+    height: 40, 
+    borderRadius: 40/ 2,
+    left: -60
   }
+
 })
