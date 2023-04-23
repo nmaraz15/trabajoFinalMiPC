@@ -1,9 +1,22 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { View, Text, SafeAreaView, FlatList, Pressable, Image } from 'react-native'
 import { styles } from './LocationListScreen.styles'
 import { data } from '../../api/data'
+import { SearchBar } from '../../components/search-bar/SearchBar'
 
 export const LocationListScreen = ({ navigation }) => {
+const [searchQuery, setSearchQuery] = useState('')
+
+const handleSearch = (query) => {
+  setSearchQuery(query)
+}
+
+
+const filteredLocations=data.filter(location=> (
+  location.title.toLowerCase().includes(searchQuery.toLowerCase())
+))
+
+
   const location = ({ item }) => (
     <Pressable onPress={() => navigation.navigate('Detalle', { item })}>
       <View style={styles.itemContainer}>
@@ -16,9 +29,9 @@ export const LocationListScreen = ({ navigation }) => {
 
   return (
     <SafeAreaView style={styles.container}>
-
+      <SearchBar handleSearch={handleSearch} searchQuery={searchQuery} />
       <FlatList
-        data={data}
+        data={filteredLocations}
         renderItem={location}
         keyExtractor={item => item.id}
         style={styles.itemList}

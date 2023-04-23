@@ -36,19 +36,13 @@ export const styles = StyleSheet.create({
       borderColor: COLORS.inactive,
       borderWidth: 1,
       borderRadius: 8,
-      
-      fontSize: FONT_SIZE.lg,
-     
-      color: COLORS.white,
+      fontSize: FONT_SIZE.md,
+       color: COLORS.white,
       backgroundColor: COLORS.secondaty,
       paddingLeft:2,
-      paddingTop: 8,
+      paddingTop: 14,
       textAlign: 'center'
-      
-      
-
-
-  },
+ },
   ratingContainer: {
     flexDirection: 'row',
     alignItems: 'center'

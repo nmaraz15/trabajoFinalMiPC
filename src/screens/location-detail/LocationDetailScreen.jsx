@@ -32,7 +32,7 @@ export const LocationDetailScreen = ({ route }) => {
         <Text style={styles.location}>{item.location}</Text>
         
         <View style={styles.ratingContainer}>
-          <Ionicons name='star' size={20} color={COLORS.primary} />
+          <Ionicons name='star' size={25} color={COLORS.primary} />
           <Text style={styles.rating}>{item.rating}</Text>
           
           <View style={styles.assistantsContainer}>

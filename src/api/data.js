@@ -10,7 +10,7 @@ export const data = [
       require('../../assets/images/bajadaDiablos2.webp'),
       require('../../assets/images/bajadaDiablos3.webp')
     ],
-   date: 'Enero 2023',
+   date: '10 de Enero, 14:00 hs.',
     locationCoordinates: {
       latitude: -23.30610153805632,
       longitude: -65.35946008582322
@@ -28,7 +28,7 @@ export const data = [
       require('../../assets/images/carnaval3.webp'),
       require('../../assets/images/carnaval4.webp')
     ],
-     date: 'Febrero 2023',
+     date: '20 y 21 de Febrero, 20: hs.',
     locationCoordinates: {
       latitude: -24.183163215378347,
       longitude: -65.3312979025704
@@ -46,7 +46,7 @@ export const data = [
       require('../../assets/images/puntaCorral3.webp'),
       require('../../assets/images/puntaCorral4.webp')
     ],
-    date: 'Abril 2023',
+    date: '3 de Abril',
     locationCoordinates: {
       latitude: -23.7222,
       longitude: -65.5
@@ -65,7 +65,7 @@ export const data = [
       require('../../assets/images/flores4.webp'),
   
     ],
-    date: 'Mayo 2023',
+    date: '5 de Mayo, 10:00 hs.',
     locationCoordinates: {
       latitude: -24.257251861382017,
       longitude: -65.27074096299968
@@ -82,7 +82,7 @@ export const data = [
       require('../../assets/images/estudiantes2.webp'),
       require('../../assets/images/estudiantes3.webp')
     ],
-   date: 'Septiembre 2023',
+   date: '18 al 22 de Septiembre',
     locationCoordinates: {
       latitude: -24.183163215378347,
       longitude: -65.3312979025704
