@@ -6,6 +6,7 @@ import { LocationDetailScreen } from './src/screens/location-detail/LocationDeta
 import { LocationDetailWebScreen } from './src/screens/location-detail/LocationDetailWebScreen'
 import { UserProvider } from './src/contexts/UserContext'
 
+
 const LocationListStack = createNativeStackNavigator()
 
 export default function App () {
