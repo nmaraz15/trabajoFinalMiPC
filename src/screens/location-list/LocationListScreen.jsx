@@ -18,7 +18,7 @@ const filteredLocations=data.filter(location=> (
 
 
   const location = ({ item }) => (
-    <Pressable onPress={() => navigation.navigate('Detalle', { item })}>
+    <Pressable onPress={() =>  navigation.navigate('LocationDetail', { item })}>
       <View style={styles.itemContainer}>
         <Image source={item.images[0]} style={styles.itemImage} />
         <Text style={styles.itemTitle}>{item.title}</Text>
