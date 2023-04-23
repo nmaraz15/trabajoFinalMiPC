@@ -4,7 +4,7 @@ import MapView, { Marker } from 'react-native-maps'
 import { styles } from './LocationDetailScreen.styles'
 import { Ionicons } from '@expo/vector-icons'
 import { COLORS } from '../../utils/theme'
-
+import { Link } from '@react-navigation/native'
 export const LocationDetailScreen = ({ route }) => {
   const { item } = route.params
   return (
@@ -46,7 +46,9 @@ export const LocationDetailScreen = ({ route }) => {
       
        </View>
 
-
+       <Link style={styles.webButton} to={{ screen: 'LocationDetailWeb', params: { url: item.url } }}>
+            Ir a la web
+          </Link>
         <Text style={styles.description}>{item.description}</Text>
       </View>
     

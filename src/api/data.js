@@ -14,7 +14,8 @@ export const data = [
     locationCoordinates: {
       latitude: -23.30610153805632,
       longitude: -65.35946008582322
-    }
+    },
+    url: 'https://prensa.jujuy.gob.ar/bajada-los-diablos-a13600'
   },
   {
     id: '2',
@@ -32,7 +33,9 @@ export const data = [
     locationCoordinates: {
       latitude: -24.183163215378347,
       longitude: -65.3312979025704
-    }
+    },
+    url: 'http://www.turismo.jujuy.gob.ar/event/carnaval/'
+
   },    
   {
     id: '3',
@@ -50,7 +53,8 @@ export const data = [
     locationCoordinates: {
       latitude: -23.7222,
       longitude: -65.5
-    }
+    },
+    url: 'http://www.turismo.jujuy.gob.ar/item/punta-corral/'
   },
   {
     id: '4',
@@ -69,7 +73,8 @@ export const data = [
     locationCoordinates: {
       latitude: -24.257251861382017,
       longitude: -65.27074096299968
-    }
+    },
+    url: 'http://sansalvadordejujuy.gob.ar/2023/04/10/se-viene-la-xi-edicion-de-la-exposicion-la-flor-mas-bella/'
   },
   {
     id: '5',
@@ -86,7 +91,8 @@ export const data = [
     locationCoordinates: {
       latitude: -24.183163215378347,
       longitude: -65.3312979025704
-    }
+    },
+    url: 'http://www.turismo.jujuy.gob.ar/event/fiesta-nacional-de-los-estudiantes/'
   }
    
   

@@ -98,6 +98,17 @@ export const styles = StyleSheet.create({
     height: 40, 
     borderRadius: 40/ 2,
     left: -60
+  },
+  webButton: {
+    textAlign: 'center',
+    backgroundColor: COLORS.secondaty,
+    color: COLORS.white,
+    borderRadius: 5,
+    paddingHorizontal: 10,
+    paddingVertical: 8,
+    width: 100,
+    height: 40,
+    marginTop: 10
   }
 
 })

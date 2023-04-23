@@ -11,17 +11,17 @@ const LocationListStack = createNativeStackNavigator()
 export default function App () {
   return (
     <>
-     
+      <UserProvider>
         <NavigationContainer>
           <LocationListStack.Navigator screenOptions={{ headerShown: false }}>
             {/* //Pantallas con Tab */}
             <LocationListStack.Screen name='Main' component={MainStackScreen} />
             {/* //Pantallas sin Tab */}
             <LocationListStack.Screen name='LocationDetail' component={LocationDetailScreen} />
-         
+            <LocationListStack.Screen name='LocationDetailWeb' component={LocationDetailWebScreen} />
           </LocationListStack.Navigator>
         </NavigationContainer>
-      
+        </UserProvider>
       <StatusBar style='auto' />
     </>
   )
