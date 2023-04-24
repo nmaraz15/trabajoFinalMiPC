@@ -26,17 +26,17 @@ export const UserInfoScreen = () => {
         </TouchableOpacity>
       </View>
       <View style={styles.content}>
-        <Text style={styles.sectionTitle}>About Me</Text>
+        <Text style={styles.sectionTitle}>Mi perfil</Text>
         <Text style={styles.sectionText}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut
-          tellus eu nisi tincidunt ultrices. Morbi id dictum ipsum. Nunc nec
-          lacus massa. Integer eget elit non elit sodales maximus.
+        Soy una persona proactiva, excelente compañera de equipo, 
+        organizado y responsable. 
+        Disfruto mucho aprender cosas nuevas, mi objetivo es un puesto desafiante y dinámico donde poder
+         compartir mi experiencia y a su vez sumar nuevos conocimientos.
         </Text>
-        <Text style={styles.sectionTitle}>Interests</Text>
+        <Text style={styles.sectionTitle}>Intereses</Text>
         <Text style={styles.sectionText}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut
-          tellus eu nisi tincidunt ultrices. Morbi id dictum ipsum. Nunc nec
-          lacus massa. Integer eget elit non elit sodales maximus.
+        Busco entrar en una empresa en donde pueda aplicar todos los conocimientos adquiridos 
+        en la universidad y mi carrera profesional.
         </Text>
       </View>
 

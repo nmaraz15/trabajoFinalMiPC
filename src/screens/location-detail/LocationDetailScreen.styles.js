@@ -109,6 +109,20 @@ export const styles = StyleSheet.create({
     width: 100,
     height: 40,
     marginTop: 10
+  },
+  button: {
+    textAlign: 'center',
+    backgroundColor: COLORS.grey,
+    borderRadius: 5,
+    paddingVertical: 10,
+    paddingLeft: 17,
+    width: 150,
+    height: 40,
+    marginTop: 5,
+    left: -50
+  },
+  buttonText: {
+    color: COLORS.secondaty,
+    fontSize:13
   }
-
 })

@@ -24,6 +24,7 @@ export const LoginScreen = () => {
           setCurrentUser({ username, password })
           navigation.navigate('Home')
         }
+
       })
       .catch(err => console.warn(err))
   }

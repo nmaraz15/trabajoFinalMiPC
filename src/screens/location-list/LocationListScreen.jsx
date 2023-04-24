@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState, useEffect } from 'react'
 import { View, Text, SafeAreaView, FlatList, Pressable, Image } from 'react-native'
 import { styles } from './LocationListScreen.styles'
 import { data } from '../../api/data'

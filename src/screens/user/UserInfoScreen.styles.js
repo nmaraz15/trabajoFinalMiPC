@@ -17,7 +17,7 @@ export const styles = StyleSheet.create({
   profileImage: {
     width: 80,
     height: 80,
-    borderRadius: 40,
+    borderRadius: 10,
     marginRight: 5
   },
   profileInfo: {
@@ -49,11 +49,12 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: COLORS.primary,
     paddingVertical: 10,
-    paddingHorizontal: 20,
-    borderRadius: 20,
+    paddingHorizontal: 40,
+    borderRadius: 10,
     marginTop: 15,
-    marginLeft: 10,
-    height: 50
+    marginLeft: 20,
+    height: 50,
+    width: 120
   },
   buttonText: {
     color: COLORS.white,
