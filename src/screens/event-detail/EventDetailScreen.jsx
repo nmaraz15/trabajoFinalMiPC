@@ -6,7 +6,7 @@ import { Ionicons } from '@expo/vector-icons'
 import { COLORS } from '../../utils/theme'
 import { Link } from '@react-navigation/native'
 import { UserContext } from '../../contexts/UserContext'
-
+import { AnimatedSwitch } from './AnimatedSwitch'
 
 export const EventDetailScreen = ({ route }) => {
   const { item } = route.params
@@ -25,24 +25,14 @@ export const EventDetailScreen = ({ route }) => {
           <Text style={styles.date}>{item.date}</Text>
          </ImageBackground>
 
-
-
-
-
-
-
-
           ))}
         </ScrollView>
       </View>
    
 
-
       <View style={styles.textContainer}>
         <Text style={styles.title}>{item.title}</Text>
-        
-        
-       
+      
         <Text style={styles.event}>{item.event}</Text>
         
         <View style={styles.ratingContainer}>
@@ -59,10 +49,10 @@ export const EventDetailScreen = ({ route }) => {
           <Image source={require('../../../assets/images/assistent4.jpg')} style={styles.imageAssistants4}/>
           <Image source={require('../../../assets/images/total.jpg')} style={styles.imageAssistants5}/>
           
-        <TouchableOpacity style={styles.button}>
-        <Text style={styles.buttonText}>¡Unete a la diversión!!</Text>
-         </TouchableOpacity>
-          
+          <Text style={styles.buttonText}>¡Unete a la diversión!!</Text>
+        <View style={styles.button}>
+        <AnimatedSwitch ></AnimatedSwitch>
+        </View>
           
           </View>
        )}

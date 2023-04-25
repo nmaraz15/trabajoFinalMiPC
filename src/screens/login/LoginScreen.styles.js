@@ -23,7 +23,7 @@ export const styles = StyleSheet.create({
     marginBottom: 5
   },
   errorText: {
-    color: 'red',
+    color: '#B57EDC',
     marginBottom: 8
   },
   button: {

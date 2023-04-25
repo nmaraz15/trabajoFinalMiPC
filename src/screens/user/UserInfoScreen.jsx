@@ -28,15 +28,15 @@ export const UserInfoScreen = () => {
       <View style={styles.content}>
         <Text style={styles.sectionTitle}>Mi perfil</Text>
         <Text style={styles.sectionText}>
-        Soy una persona proactiva, excelente compañera de equipo, 
-        organizado y responsable. 
+        Soy una persona proactiva, buena compañera de equipo, 
+        organizada y responsable. 
         Disfruto mucho aprender cosas nuevas, mi objetivo es un puesto desafiante y dinámico donde poder
          compartir mi experiencia y a su vez sumar nuevos conocimientos.
         </Text>
         <Text style={styles.sectionTitle}>Intereses</Text>
         <Text style={styles.sectionText}>
         Busco entrar en una empresa en donde pueda aplicar todos los conocimientos adquiridos 
-        en la universidad y mi carrera profesional.
+        en la universidad y en mi carrera profesional.
         </Text>
       </View>
 
