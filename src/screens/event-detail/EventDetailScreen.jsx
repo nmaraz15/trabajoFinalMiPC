@@ -1,14 +1,14 @@
 import React, { useContext } from 'react'
 import { View, ScrollView, Image, Text, ImageBackground, TouchableOpacity } from 'react-native'
 import MapView, { Marker } from 'react-native-maps'
-import { styles } from './LocationDetailScreen.styles'
+import { styles } from './EventDetailScreen.styles'
 import { Ionicons } from '@expo/vector-icons'
 import { COLORS } from '../../utils/theme'
 import { Link } from '@react-navigation/native'
 import { UserContext } from '../../contexts/UserContext'
 
 
-export const LocationDetailScreen = ({ route }) => {
+export const EventDetailScreen = ({ route }) => {
   const { item } = route.params
   const { currentUser } = useContext(UserContext)
 
@@ -18,10 +18,18 @@ export const LocationDetailScreen = ({ route }) => {
       <View style={styles.imageContainer}>
         <ScrollView horizontal pagingEnabled style={styles.imageContainer}>
           {item.images.map((image, idx) => (
-            <ImageBackground key={idx} source={image} style={styles.image} resizeMode='cover'>
+            <ImageBackground key={idx} source={{ uri: `https://drive.google.com/uc?id=${image}` }} 
+            style={styles.image} 
+            resizeMode='cover'>
 
           <Text style={styles.date}>{item.date}</Text>
          </ImageBackground>
+
+
+
+
+
+
 
 
           ))}
@@ -35,7 +43,7 @@ export const LocationDetailScreen = ({ route }) => {
         
         
        
-        <Text style={styles.location}>{item.location}</Text>
+        <Text style={styles.event}>{item.event}</Text>
         
         <View style={styles.ratingContainer}>
           <Ionicons name='star' size={25} color={COLORS.primary} />
@@ -60,7 +68,7 @@ export const LocationDetailScreen = ({ route }) => {
        )}
        </View>
 
-       <Link style={styles.webButton} to={{ screen: 'LocationDetailWeb', params: { url: item.url } }}>
+       <Link style={styles.webButton} to={{ screen: 'EventDetailWeb', params: { url: item.url } }}>
             Ir a la web
           </Link>
         <Text style={styles.description}>{item.description}</Text>
@@ -69,16 +77,16 @@ export const LocationDetailScreen = ({ route }) => {
           <MapView
         style={styles.map}
         initialRegion={{
-          latitude: item.locationCoordinates.latitude,
-          longitude: item.locationCoordinates.longitude,
+          latitude: item.eventCoordinates.latitude,
+          longitude: item.eventCoordinates.longitude,
           latitudeDelta: 0.002,
           longitudeDelta: 0.002
         }}
       >
         <Marker
           coordinate={{
-            latitude: item.locationCoordinates.latitude,
-            longitude: item.locationCoordinates.longitude
+            latitude: item.eventCoordinates.latitude,
+            longitude: item.eventCoordinates.longitude
           }}
           title={item.title}
         />

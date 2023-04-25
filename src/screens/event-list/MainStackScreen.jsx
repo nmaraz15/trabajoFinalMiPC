@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyleSheet } from 'react-native'
-import { LocationListScreen } from './LocationListScreen'
+import { EventListScreen } from './EventListScreen'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { COLORS, SPACING } from '../../utils/theme'
 import { Ionicons } from '@expo/vector-icons'
@@ -32,7 +32,7 @@ export const MainStackScreen = () => {
   return (
     <Tab.Navigator screenOptions={screenOptions}>
       <Tab.Screen name='Home' options={{ title: 'Inicio' }} component={HomeScreen} />
-      <Tab.Screen name='Search' options={{ title: 'Explorar' }} component={LocationListScreen} />
+      <Tab.Screen name='Search' options={{ title: 'Explorar' }} component={EventListScreen} />
       <Tab.Screen name='Profile' options={{ title: 'Perfil' }} component={ProfileScreen} />
     </Tab.Navigator>
   )
